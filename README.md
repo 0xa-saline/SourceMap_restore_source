@@ -54,6 +54,8 @@ python3 mappings.py http://www.baidu.com/
 2020-05-26 Tuesday 11:11:43 INFO 12985 http://www.baidu.com/js/app.f49d83e6.js.map	success get mappings
 ```
 
+![image](https://user-images.githubusercontent.com/14137698/82857902-e6620f00-9f44-11ea-9d0d-0578cc481040.png)
+
 对应的文件会保存在当前host的文件夹内
 
 ```
