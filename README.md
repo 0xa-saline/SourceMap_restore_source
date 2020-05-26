@@ -104,3 +104,13 @@ restore-source-tree app.f49d83e6.js.map
 ```
 
 
+### 参考
+  
+  * https://werhw.cn/2020/04/vue-panetrate/
+  
+  * https://gh0st.cn/archives/2020-01-08/2
+  
+  * https://laysent.com/til/2019-05-03_restore-source-map
+  
+  * [利用SourceMap还原前端代码](https://mp.weixin.qq.com/s?__biz=MzAxNDM3NTM0NQ==&mid=2657035959&idx=1&sn=8f65b8486972fd17f4a2b6c2c0080c01&chksm=803fc669b7484f7f480a580b926af4173694c842a169484f389bd0ba0759ea3b197796b7d51c)
+
