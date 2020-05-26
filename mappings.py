@@ -48,7 +48,7 @@ headers = {
 proxies = {"http": "","https": ""}
 #proxies = {"http": "socks5://127.0.0.1:1086","https": "socks5://127.0.0.1:1086"}
 #proxies = {"http": "http://127.0.0.1:8080","https": "http://127.0.0.1:8080"}
-#proxies = {"http": "socks4://127.0.0.1:1080","https": "socks4://127.0.0.1:1080"}
+#proxies = {"http": "socks4://127.0.0.1:8080","https": "socks4://127.0.0.1:8080"}
 def get_path(url):
     filename = os.path.basename(url)
     nurl =  url.replace(filename,'')
@@ -82,6 +82,10 @@ def check_url(url):
                             host = link.get('src')
                             if url_match(host,url):
                                 urls.add(host)
+        for link in bs.findAll("link"):
+            if  link.get('href').endswith('.js'):
+                urls.add(url+link.get('href'))
+
     except Exception as e:
         logger.error('[get script] {}'.format(traceback.format_exc()))
         pass
