@@ -56,6 +56,36 @@ python3 mappings.py http://www.baidu.com/
 
 对应的文件会保存在当前host的文件夹内
 
+```
+├── 192.168.1.18
+│   └── js
+│       ├── app.cf578cc7.js
+│       └── chunk-vendors.f837dbca.js
+├── 192.168.1.68_8090
+│   └── js
+│       ├── app.14c99c88.js
+│       └── chunk-vendors.c8222fea.js
+├── 192.168.1.242_8088
+│   └── static
+│       └── js
+│           ├── 7.6f33fbba.chunk.js
+│           ├── 7.6f33fbba.chunk.js.map
+│           ├── main.a29968b8.chunk.js
+│           └── main.a29968b8.chunk.js.map
+├── 192.168.1.139
+│   └── js
+│       ├── app.ef46941d.js
+│       ├── app.ef46941d.js.map
+│       ├── chunk-vendors.38f7f856.js
+│       └── chunk-vendors.38f7f856.js.map
+├── 192.168.1.218_5001
+│   └── js
+│       ├── app.65236379.js
+│       ├── app.65236379.js.map
+│       ├── chunk-vendors.554e271c.js
+│       └── chunk-vendors.554e271c.js.map
+```
+
 ### 还原代码
 
 利用restore-source-tree 进行还原
