@@ -130,7 +130,7 @@ def check_source(url):
         if resp.status_code == 200 and "mappings" in str(resp.content):
             #print re.findall(r'sourceMappingURL\=(.*?)\.map',resp.content)
             logger.info(url+'\tsuccess get mappings')
-            result = json.loads(resp.content)
+            result = json.loads(resp.content.decode('utf-8'))
             folder_name = netloc.replace(':', '_') + '/'.join(path.split('/')[:-1])
             if not os.path.exists(folder_name):
                 os.makedirs(folder_name)
